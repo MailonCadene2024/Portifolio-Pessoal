@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initScrollAnimations();
     initSkillBars();
     
-    // mensagem secreta no console hehe
+    // mensagem secreta no console kkk
     console.log('%c Olá! 👋 ', 'color: #6366f1; font-size: 20px; font-weight: bold;');
     console.log('Se você está vendo isso, provavelmente entende de código!');
     console.log('Entre em contato comigo: meu-email@exemplo.com');
@@ -417,3 +417,4 @@ console.log(`
 `);
 
 console.log('Ah, e se você quiser dar uma olhada no código, está tudo no GitHub! 🚀');
+

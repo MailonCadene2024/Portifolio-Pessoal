@@ -530,8 +530,12 @@ body.dark-theme {
 }
 
 .skill-item {
-    /* cada habilidade */
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
+    /* cada habilidade */
+
 
 .skill-header {
     display: flex;
