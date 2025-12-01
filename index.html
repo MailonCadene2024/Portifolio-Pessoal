@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mailon - Portfolio Pessoal</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- carregando as fontes do Google, escolhi uma mais diferentona -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- esse header vai ficar fixo no topo, acho que fica mais moderno -->
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <!-- meio que copiei essa ideia dos sites gringos, mas acho que ficou legal -->
+                <span class="logo-text">Mailon Cadene.</span>
+            </div>
+            
+            <!-- menu principal, vou fazer com navegação por âncoras mesmo -->
+            <nav class="nav-menu" id="navMenu">
+                <a href="#sobre" class="nav-link">Sobre mim</a>
+                <a href="#formacao" class="nav-link">Formação</a>
+                <a href="#portfolio" class="nav-link">Portfólio</a>
+                <a href="#contato" class="nav-link">Contato</a>
+            </nav>
+
+            <!-- botão do menu hamburger pra mobile -->
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- esse botão de tema eu vi no youtube, achei massa -->
+            <button class="theme-toggle" id="themeToggle">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- seção principal, tipo uma landing page -->
+    <section id="sobre" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <!-- animação de typing que vou fazer depois -->
+                    <p class="greeting">Olá, eu sou</p>
+                    <h1 class="hero-title">Mailon</h1>
+                    <h2 class="hero-subtitle">Gerente de Análise de Dados e TI</h2>
+                    <p class="hero-description">
+                        Há 7 anos na Terris Tecnologia, lidero projetos de análise de dados e o setor de TI de uma empresa que fatura R$ 25 milhões anuais com 90 funcionários. Meus relatórios, insights e ferramentas de BI são fundamentais para decisões estratégicas da diretoria e facilitam o acesso à informação para toda a equipe comercial.
+                    </p>
+                    
+                    <!-- botões de call to action -->
+                    <div class="hero-buttons">
+                        <a href="#contato" class="btn btn-primary">Fale comigo</a>
+                        <a href="#portfolio" class="btn btn-secondary">Ver trabalhos</a>
+                    </div>
+                </div>
+                
+                <!-- vai ter uma imagem aqui, mas por enquanto vou deixar um placeholder -->
+                <div class="hero-image">
+                    <div class="profile-card">
+                        <div class="profile-img-placeholder">
+                            <!-- por enquanto só um emoji mesmo, depois coloco uma foto -->
+                            <span><a href="https://ibb.co/zHsRYGWf"><img src="https://i.ibb.co/zHsRYGWf/1737552955063.jpg" alt="1737552955063" border="0"></a></span>
+                        </div>
+                        <div class="profile-info">
+                            <h3>Mailon</h3>
+                            <p>Pato Branco, PR</p>
+                            <!-- esses badges ficaram legais -->
+                            <div class="badges">
+                                <span class="badge">Power BI</span>
+                                <span class="badge">Python</span>
+                                <span class="badge">SQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- esse background animado vi num codepen, vou adaptar -->
+        <div class="bg-animation">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- seção de formação -->
+    <section id="formacao" class="section formacao">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Formação & Conhecimentos</h2>
+                <p class="section-description">Minha jornada acadêmica e profissional</p>
+            </div>
+
+            <div class="formacao-content">
+                <!-- formação acadêmica -->
+                <div class="education-card">
+                    <div class="card-icon">🎓</div>
+                    <div class="card-content">
+                        <h3>CST em Ciência de Dados</h3>
+                        <p class="institution">UNINTER</p>
+                        <p class="period">Em andamento</p>
+                        <p class="description">
+                            Focando em análise de dados, machine learning e business intelligence. 
+                            Aplicando o conhecimento diretamente no trabalho na Terris.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- habilidades técnicas -->
+                <div class="skills-section">
+                    <h3>Tecnologias & Ferramentas</h3>
+                    <div class="skills-grid">
+                        <!-- cada skill vai ter uma barra de progresso -->
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-level">Intermediário</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Google Apps Script</span>
+                                <span class="skill-level">Avançado</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-level">Intermediário</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="70"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Business Intelligence</span>
+                                <span class="skill-level">Avançado</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">HTML/CSS</span>
+                                <span class="skill-level">Intermediário</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="65"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Power BI</span>
+                                <span class="skill-level">Avançado</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">SQL</span>
+                                <span class="skill-level">Avançado</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- idiomas -->
+                <div class="languages-section">
+                    <h3>Idiomas</h3>
+                    <div class="language-item">
+                        <span class="language-name">Português</span>
+                        <span class="language-level">Nativo</span>
+                    </div>
+                    <div class="language-item">
+                        <span class="language-name">Inglês</span>
+                        <span class="language-level">Intermediário</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- seção do portfólio -->
+    <section id="portfolio" class="section portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Projetos & Trabalhos</h2>
+                <p class="section-description">Alguns projetos que desenvolvi na Terris Tecnologia</p>
+                <div class="confidential-note">
+                    <p><strong>📋 Nota importante:</strong> Todos os projetos foram desenvolvidos para uso interno da Terris Tecnologia. 
+                    Por questões de confidencialidade empresarial, não posso divulgar detalhes específicos, 
+                    códigos-fonte ou dados dos sistemas.</p>
+                </div>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- projeto 1 - dashboards terris -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <!-- placeholder por enquanto -->
+                        <div class="project-placeholder">
+                            <span>📊</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Dashboards Corporativos - Terris</h3>
+                        <p class="project-description">
+                            Sistemas de business intelligence para análise de performance de vendas, 
+                            métricas regionais e relatórios executivos. Desenvolvido com tecnologias web modernas.
+                            <em>*Projeto confidencial - uso exclusivamente interno.</em>
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Google Apps Script</span>
+                            <span class="tech-tag">HTML/CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" style="opacity: 0.5; cursor: not-allowed;">Confidencial</a>
+                            <a href="#" class="project-link" style="opacity: 0.5; cursor: not-allowed;">Uso interno</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- projeto 2 - central de inteligência -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <span>🧠</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Central de Inteligência Terris</h3>
+                        <p class="project-description">
+                            Plataforma web multitenant para análise de dados corporativos, com diferentes níveis de acesso 
+                            para vendedores, gerentes e administradores. Sistema hospedado no GitHub e publicado no Netlify.
+                            <em>*Projeto confidencial - detalhes não podem ser divulgados.</em>
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">HTML/CSS</span>
+                            <span class="tech-tag">GitHub</span>
+                            <span class="tech-tag">Netlify</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" style="opacity: 0.5; cursor: not-allowed;">Confidencial</a>
+                            <a href="#" class="project-link" style="opacity: 0.5; cursor: not-allowed;">Uso interno</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- projeto 3 - análise de dados -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <span>📈</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Relatórios Executivos de BI</h3>
+                        <p class="project-description">
+                            Desenvolvimento de relatórios executivos com análise de dados corporativos, 
+                            indicadores de performance e métricas estratégicas para tomada de decisão.
+                            <em>*Informações confidenciais - acesso restrito à diretoria.</em>
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Power BI</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">Google Apps Script</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" style="opacity: 0.5; cursor: not-allowed;">Confidencial</a>
+                            <a href="#" class="project-link" style="opacity: 0.5; cursor: not-allowed;">Uso interno</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- seção de contato -->
+    <section id="contato" class="section contato">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Vamos conversar?</h2>
+                <p class="section-description">Entre em contato para discutir projetos ou oportunidades</p>
+            </div>
+
+            <div class="contato-content">
+                <!-- informações de contato -->
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4>Localização</h4>
+                            <p>Pato Branco, Paraná - Brasil</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">💼</div>
+                        <div>
+                            <h4>Empresa</h4>
+                            <p>Terris Tecnologia LTDA<br>Gerente de Análise de Dados e TI</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">🚗</div>
+                        <div>
+                            <h4>Curiosidade</h4>
+                            <p>Da teoria à prática: aprendi programação e banco de dados de forma completamente autônoma online, aplicando esse conhecimento em soluções reais na Terris Tecnologia.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- formulário de contato -->
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="nome">Nome completo</label>
+                            <input type="text" id="nome" name="nome" required>
+                            <span class="error-message" id="nomeError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                            <span class="error-message" id="mensagemError"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span class="btn-text">Enviar mensagem</span>
+                            <span class="btn-loading" style="display: none;">Enviando...</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer simples -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Mailon. Feito com foco e muito café ☕</p>
+            <div class="footer-links">
+                <!-- quando tiver as redes sociais, coloco aqui -->
+                <a href="#" class="footer-link">GitHub</a>
+                <a href="#" class="footer-link">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- modal de sucesso -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="modal-icon">✅</span>
+                <h3>Mensagem enviada!</h3>
+            </div>
+            <p>Obrigado pelo contato! Vou responder o mais rápido possível.</p>
+            <button class="btn btn-primary" id="closeModal">OK</button>
+        </div>
+    </div>
+
+    <!-- carregando o javascript -->
+    <script src="script.js"></script>
+</body>
+</html>
